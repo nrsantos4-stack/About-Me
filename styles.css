@@ -1,0 +1,207 @@
+/* Webpage style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;  
+}
+
+h1, h2, h3, h4 { 
+   font-family: Open Sans, sans-serif;
+   color: #000000;
+}
+ 
+
+/* Header */
+header {
+    background-color:  #7B29B3;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin: 12px;
+}
+
+
+/* Flexbox layout for main */
+
+main {
+    max-width: 2000px ;
+    margin: 32px;
+    padding: 20px;
+}
+
+
+.myprofile {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;       
+    padding: 24px;
+}
+
+
+/* Photo placeholder */
+
+.profile-photo {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    background-color: #EAD8F8;
+    color: #000000;
+    border: 2.5px solid #000000;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 50px;
+    box-sizing: border-box;   
+}
+
+/* Content beside the placeholder */
+.profile-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Sections + box model */
+section {
+    background-color: #EAD8F8;
+    margin-bottom: 24px;
+    padding: 24px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+    color: #000000;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 3px solid #000000;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #000000;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    border-bottom: 3px solid #000000;
+    padding-bottom: 8px;
+}
+
+
+h4 {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+/* Paragraphs and lists */
+p {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 24px;
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Links */
+a {
+    color: #FFFFFF;
+    overflow-wrap: normal;
+}
+
+a:hover {
+    color: #8A4B08;
+}
+
+/* Footer */
+footer {
+    background-color: #7B29B3;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+    margin-top: 30px;
+}
+
+footer p {
+        margin: 0;
+}
+
+/* Adaptation for mobile screens */
+@media (max-width: 600px) {   
+  header {
+    padding: 20px 16px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+
+  .quote {
+        font-size: 20px;
+  }
+
+
+  main {
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  .myprofile {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+   .profile-photo {
+     width: 100%;
+     max-width: 340px;
+     height: 340px;
+  }
+            
+
+  .profile-content {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+    
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+    
+  h2 {
+    font-size: 20px;
+
+  }
+
+  h3 {
+    font-size: 15px;  
+  }
+
+  h4 {
+    font-size: 14px;
+  } 
+
+}
+
+
+    
